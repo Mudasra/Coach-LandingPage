@@ -31,7 +31,7 @@ const ThankYouPage = () => {
 
   return (
     <div
-      className="min-h-screen flex flex-col"
+      className="min-h-screen pt-5 flex flex-col"
       style={{
         background: "#06080C",
         color: "#E8E2D6",
