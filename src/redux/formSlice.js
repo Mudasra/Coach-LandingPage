@@ -15,7 +15,7 @@ export const submitLeadForm = createAsyncThunk(
 const formSlice = createSlice({
   name: "form",
   initialState: {
-    status: "idle", // 'idle' | 'loading' | 'success' | 'error'
+    status: "idle", 
     submittedData: null,
     error: null,
     isModalOpen: false,
