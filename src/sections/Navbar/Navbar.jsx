@@ -76,31 +76,38 @@ const Navbar = () => {
       >
         <div className="nav-gold-line" aria-hidden="true" />
         <div className="nav-inner">
+
+          {/* Always visible */}
           <NavLogo />
 
+          {/* Landing page only — full nav */}
           {isLandingPage && (
-            <DesktopNav navLinks={navLinks} onNavClick={handleNavClick} />
+            <>
+              <DesktopNav navLinks={navLinks} onNavClick={handleNavClick} />
+              <DesktopRight
+                isLandingPage={isLandingPage}
+                onCtaClick={handleDesktopCta}
+              />
+              <HamburgerButton
+                menuOpen={menuOpen}
+                onToggle={() => setMenuOpen((p) => !p)}
+              />
+            </>
           )}
 
-          <DesktopRight
-            isLandingPage={isLandingPage}
-            onCtaClick={handleDesktopCta}
-          />
-
-          <HamburgerButton
-            menuOpen={menuOpen}
-            onToggle={() => setMenuOpen((p) => !p)}
-          />
         </div>
       </header>
 
-      <MobileDrawer
-        menuOpen={menuOpen}
-        navLinks={navLinks}
-        onClose={() => setMenuOpen(false)}
-        onNavClick={handleNavClick}
-        onCtaClick={handleMobileCta}
-      />
+      {/* Mobile drawer — landing page only */}
+      {isLandingPage && (
+        <MobileDrawer
+          menuOpen={menuOpen}
+          navLinks={navLinks}
+          onClose={() => setMenuOpen(false)}
+          onNavClick={handleNavClick}
+          onCtaClick={handleMobileCta}
+        />
+      )}
     </>
   );
 };
