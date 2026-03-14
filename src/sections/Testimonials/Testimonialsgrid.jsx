@@ -1,5 +1,5 @@
-import SkeletonCard from "./SkeletonCard";
-import TestimonialCard from "./TestimonialCard";
+import SkeletonCard from "./Skeletoncard";
+import TestimonialCard from "./Testimonialcard";
 
 const TestimonialsGrid = ({ status, testimonials, cardVis }) => (
   <>
