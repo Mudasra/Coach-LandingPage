@@ -1,6 +1,6 @@
 // components/BookingForm.jsx
 import React from "react";
-import SubmitButton from "./SubmitButton";
+import SubmitButton from "./Submitbutton";
 
 const BookingForm = ({
   form,
