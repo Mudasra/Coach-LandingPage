@@ -1,5 +1,5 @@
 import React from "react";
-import StepCard from "./Stepcard";
+import StepCard from "./StepCard";
 
 const steps = [
   {
