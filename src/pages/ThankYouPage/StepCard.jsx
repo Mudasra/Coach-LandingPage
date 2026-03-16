@@ -13,35 +13,31 @@ const StepCard = ({ step, visible, delay }) => (
       transform: visible ? "translateY(0)" : "translateY(18px)",
       transition: `opacity 0.7s ease ${delay}ms, transform 0.7s ease ${delay}ms`,
     }}
-    onMouseEnter={(e) => {
+    onMouseEnter={e => {
       e.currentTarget.style.background = "rgba(212,175,55,0.03)";
       e.currentTarget.style.borderColor = "rgba(212,175,55,0.15)";
     }}
-    onMouseLeave={(e) => {
+    onMouseLeave={e => {
       e.currentTarget.style.background = "rgba(255,255,255,0.018)";
       e.currentTarget.style.borderColor = "rgba(255,255,255,0.05)";
     }}
   >
     {/* Top gradient line */}
-    <div
-      style={{
-        position: "absolute", top: 0, left: 0, right: 0, height: 1,
-        background: "linear-gradient(90deg, transparent, rgba(212,175,55,0.3), transparent)",
-      }}
-    />
+    <div style={{
+      position: "absolute", top: 0, left: 0, right: 0, height: 1,
+      background: "linear-gradient(90deg, transparent, rgba(212,175,55,0.3), transparent)",
+    }} />
 
-    <div className="flex gap-4 items-start">
-      {/* Step number badge */}
-      <div
-        style={{
-          flexShrink: 0,
-          fontFamily: "'Cormorant Garamond', serif",
-          fontSize: "2rem", fontWeight: 700,
-          color: "rgba(212,175,55,0.15)",
-          lineHeight: 1, letterSpacing: "-0.03em",
-          minWidth: 44,
-        }}
-      >
+    <div style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+      {/* Step number */}
+      <div style={{
+        flexShrink: 0,
+        fontFamily: "'Cormorant Garamond', serif",
+        fontSize: "2rem", fontWeight: 700,
+        color: "rgba(212,175,55,0.15)",
+        lineHeight: 1, letterSpacing: "-0.03em",
+        minWidth: 44,
+      }}>
         {step.step}
       </div>
 

@@ -7,11 +7,9 @@ import WhileYouWait from "./Whileyouwait";
 import RedirectNotice from "./Redirectnotice";
 import { selectSubmittedData } from "../../redux/formSlice";
 
-
 const ThankYouPage = () => {
   const submittedData = useSelector(selectSubmittedData);
-
-  const [visible,   setVisible]   = useState(false);
+  const [visible, setVisible] = useState(false);
   const [countdown, setCountdown] = useState(10);
 
   useEffect(() => {
@@ -30,28 +28,38 @@ const ThankYouPage = () => {
   }, []);
 
   return (
-    <div
-      className="min-h-screen pt-5 flex flex-col"
-      style={{
-        background: "#06080C",
-        color: "#E8E2D6",
-        fontFamily: "'DM Sans', sans-serif",
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
+    <div style={{
+      background: "#06080C",
+      color: "#E8E2D6",
+      fontFamily: "'DM Sans', sans-serif",
+      position: "relative",
+      overflow: "hidden",
+      minHeight: "100vh",
+    }}>
       <PageBackground />
 
-      <main className="relative z-10 flex-1 max-w-5xl mx-auto w-full px-6 py-20">
-        <SuccessHero visible={visible} submittedName={submittedData?.name} />
-        <WhatHappensNext visible={visible} />
-        <WhileYouWait visible={visible} />
-        <RedirectNotice visible={visible} countdown={countdown} />
-      </main>
+      <div style={{
+        position: "relative",
+        zIndex: 10,
+        maxWidth: "60rem",
+        width: "100%",
+        margin: "0 auto",
+        padding: "9rem 1.5rem 5rem",
+      }}>
+        <div style={{ marginBottom: "2rem" }}>
+          <SuccessHero visible={visible} submittedName={submittedData?.name} />
+        </div>
 
-      <style>{`
-        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-      `}</style>
+        <div style={{ marginBottom: "3rem" }}>
+          <WhatHappensNext visible={visible} />
+        </div>
+
+        <div style={{ marginBottom: "3rem" }}>
+          <WhileYouWait visible={visible} />
+        </div>
+
+        <RedirectNotice visible={visible} countdown={countdown} />
+      </div>
     </div>
   );
 };

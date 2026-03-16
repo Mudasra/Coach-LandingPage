@@ -7,9 +7,9 @@ import Layout from "./pages/Layout";
 import store from "./redux/store";
 import { SEOHead } from "./SEOHead";
 import { ScrollToTop } from "./ScrollToTop";
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 
-const ThankYouPage = (() => "./pages/ThankYouPage/Thankyoupage") ;
+const ThankYouPage = lazy(() => import ("./pages/ThankYouPage/Thankyoupage")) ;
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<LandingPage />} />
             <Route path="/thank-you" element={
-              <Suspense fallback={<div style={{minHeight:'100vh', background:'#F9FAFB'}}></div>}><ThankYouPage /></Suspense>
+              <Suspense fallback={<div style={{minHeight:'100vh', background:'#080A0F'}}></div>}><ThankYouPage /></Suspense>
               } />
           </Route>
         </Routes>
