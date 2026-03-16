@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { painPoints } from "./Painpointsdata";
-import { PAIN_STYLES } from "./PainStyles";
+import "../../../styles/PainPoints.css";
 import PainBridge from "./Painbridge";
 import PainCard from "./Paincard";
 import PainHeader from "./Painheader";
@@ -28,7 +28,7 @@ const PainPoints = () => {
           obs.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0, rootMargin: '0px 0px -50px 0px' }
     );
     if (sectionRef.current) obs.observe(sectionRef.current);
     return () => obs.disconnect();
@@ -36,7 +36,6 @@ const PainPoints = () => {
 
   return (
     <>
-      <style>{PAIN_STYLES}</style>
       <section
         id="pain-points"
         className="pain-section"

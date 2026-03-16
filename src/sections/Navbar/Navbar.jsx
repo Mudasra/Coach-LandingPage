@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
-
-import { NAVBAR_STYLES } from "./NavbarStyles";
+import "../../../styles/Navbar.css";
 import NavLogo from "./NavLogo";
 import DesktopNav from "./DesktopNav";
 import DesktopRight from "./DesktopRight";
@@ -67,8 +66,6 @@ const Navbar = () => {
 
   return (
     <>
-      <style>{NAVBAR_STYLES}</style>
-
       <header
         className={`nav-header ${scrolled ? "anchored" : "floating"}`}
         role="banner"

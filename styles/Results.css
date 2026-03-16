@@ -1,4 +1,3 @@
-export const RESULTS_STYLES = `
 
 .results-section {
   background: #06080C;
@@ -200,4 +199,3 @@ export const RESULTS_STYLES = `
 
 /* FIX: was #2A2F3B — invisible */
 .rs-label { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: #6B7280; }
-`;

@@ -1,6 +1,4 @@
-export const NAVBAR_STYLES = `
 
-/* ── Header shell ── */
 .nav-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 40;
   transition: background 0.4s ease, border-color 0.4s ease, padding 0.3s ease, backdrop-filter 0.4s ease;
@@ -271,4 +269,3 @@ export const NAVBAR_STYLES = `
   box-shadow: 0 4px 20px rgba(212,175,55,0.15);
 }
 .btn-mob-gold:hover { background-position: 100% 0; box-shadow: 0 4px 30px rgba(212,175,55,0.3); }
-`;

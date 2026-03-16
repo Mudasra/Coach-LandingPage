@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-
-import { HERO_STYLES } from "./HeroStyles";
+import "../../../styles/Hero.css";
 import HeroWave from "./Herowave";
 import HeroScrollCue from "./Heroscrollcue";
 import HeroSidePanel from "./Herosidepanel";
@@ -30,7 +29,6 @@ const Hero = () => {
 
   return (
     <>
-      <style>{HERO_STYLES}</style>
       <section className="hero-premium" aria-label="Hero section">
         <HeroBackground phase={phase} />
 

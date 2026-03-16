@@ -1,4 +1,3 @@
-export const PAIN_STYLES = `
 
 .pain-section {
   background: #080A0F;
@@ -160,4 +159,3 @@ export const PAIN_STYLES = `
 }
 .pain-bridge-text em { font-style: italic; font-weight: 300; color: #9C7A20; }
 .pain-bridge-text strong { font-weight: 600; color: #6B7280; }
-`;

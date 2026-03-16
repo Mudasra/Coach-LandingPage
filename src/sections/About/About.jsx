@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
-import { ABOUT_STYLES } from "./Aboutstyles";
+import "../../../styles/About.css"
 import AboutProse from "./Aboutprose";
 import CredentialsGrid from "./Credentialsgrid";
 import AboutCTA from "./Aboutcta";
@@ -17,7 +17,7 @@ const About = () => {
   useEffect(() => {
     const obs = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) { setVis(true); obs.disconnect(); } },
-      { threshold: 0.15 }
+      { threshold: 0, rootMargin: '0px 0px -50px 0px' }
     );
     if (sectionRef.current) obs.observe(sectionRef.current);
     return () => obs.disconnect();
@@ -25,7 +25,6 @@ const About = () => {
 
   return (
     <>
-      <style>{ABOUT_STYLES}</style>
       <section id="about" className="about-section" aria-label="About the coach" ref={sectionRef}>
         <AboutBackground />
 

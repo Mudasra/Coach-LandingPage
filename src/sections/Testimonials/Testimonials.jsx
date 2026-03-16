@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { TESTIMONIALS_STYLES } from "./Testimonialsstyles";
 import TestimonialsBackground from "./Testimonialsbackground";
 import TestimonialsHeader from "./Testimonialsheader";
 import TestimonialsGrid from "./Testimonialsgrid";
 import { fetchTestimonials, selectTestimonials, selectTestimonialsStatus } from "../../redux/testimonialsSlice";
+import "../../../styles/Testimonials.css"
 
 const Testimonials = () => {
   const dispatch = useDispatch();
@@ -31,7 +31,7 @@ const Testimonials = () => {
           obs.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0, rootMargin: '0px 0px -50px 0px' }
     );
     if (sectionRef.current) obs.observe(sectionRef.current);
     return () => obs.disconnect();
@@ -39,7 +39,6 @@ const Testimonials = () => {
 
   return (
     <>
-      <style>{TESTIMONIALS_STYLES}</style>
       <section
         id="testimonials"
         className="testi-section"

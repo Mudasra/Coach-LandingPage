@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { FAQ_STYLES } from "./Faqstyles";
+import "../../../styles/Faq.css"
 import { faqs } from "./Faqdata";
 import { openModal } from "../../redux/formSlice";
 import FAQBackground from "./Faqbackground";
@@ -25,7 +25,6 @@ const FAQ = () => {
 
   return (
     <>
-      <style>{FAQ_STYLES}</style>
       <section id="faq" className="faq-section" aria-label="Frequently asked questions" ref={sectionRef}>
         <FAQBackground />
 

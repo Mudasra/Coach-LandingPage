@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { transformations } from "./Resultsdata";
-import { RESULTS_STYLES } from "./Resultsstyles";
+import "../../../styles/Results.css";
 import ResultsBackground from "./Resultsbackground";
 import ResultsHeader from "./Resultsheader";
 import ResultCard from "./Resultcard";
@@ -24,7 +24,7 @@ const Results = () => {
           obs.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0, rootMargin: '0px 0px -50px 0px' }
     );
     if (sectionRef.current) obs.observe(sectionRef.current);
     return () => obs.disconnect();
@@ -32,7 +32,6 @@ const Results = () => {
 
   return (
     <>
-      <style>{RESULTS_STYLES}</style>
       <section
         id="results"
         className="results-section"

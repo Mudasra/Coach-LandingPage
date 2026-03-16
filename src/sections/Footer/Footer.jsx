@@ -1,5 +1,5 @@
 import React from "react";
-import { FOOTER_STYLES } from "./Footerstyles";
+import "../../../styles/Footer.css"
 import FooterBackground from "./Footerbackground";
 import FooterBrand from "./Footerbrand";
 import FooterNavCol from "./Footernavcol";
@@ -12,7 +12,6 @@ const Footer = () => {
 
   return (
     <>
-      <style>{FOOTER_STYLES}</style>
       <footer className="footer-root" role="contentinfo">
         <FooterBackground />
 

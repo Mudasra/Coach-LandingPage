@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import useCountdown from "./Usecountdown";
-import { CTA_STYLES } from "./Ctastyles";
+import "../../../styles/CTA.css";
 import { openModal } from "../../redux/formSlice";
 import CTABackground from "./Ctabackground";
 import CTAHeader from "./Ctaheader";
@@ -25,7 +25,7 @@ const CTA = () => {
           obs.disconnect();
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0, rootMargin: '0px 0px -50px 0px' }
     );
     if (sectionRef.current) obs.observe(sectionRef.current);
     return () => obs.disconnect();
@@ -33,7 +33,6 @@ const CTA = () => {
 
   return (
     <>
-      <style>{CTA_STYLES}</style>
       <section id="cta" className="cta-section" aria-label="Book your strategy call" ref={sectionRef}>
         <CTABackground lineVis={lineVis} />
 
