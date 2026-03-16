@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import "../../../styles/Faq.css"
+import "../../styles/Faq.css"
 import { faqs } from "./Faqdata";
 import { openModal } from "../../redux/formSlice";
 import FAQBackground from "./Faqbackground";

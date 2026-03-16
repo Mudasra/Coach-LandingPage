@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
-import "../../../styles/Navbar.css";
+import "../../styles/Navbar.css";
 import NavLogo from "./NavLogo";
 import DesktopNav from "./DesktopNav";
 import DesktopRight from "./DesktopRight";

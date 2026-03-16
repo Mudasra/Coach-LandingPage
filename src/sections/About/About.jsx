@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
-import "../../../styles/About.css"
+import "../../styles/About.css"
 import AboutProse from "./Aboutprose";
 import CredentialsGrid from "./Credentialsgrid";
 import AboutCTA from "./Aboutcta";

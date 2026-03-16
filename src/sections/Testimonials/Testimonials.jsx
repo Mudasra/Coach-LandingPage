@@ -4,7 +4,7 @@ import TestimonialsBackground from "./Testimonialsbackground";
 import TestimonialsHeader from "./Testimonialsheader";
 import TestimonialsGrid from "./Testimonialsgrid";
 import { fetchTestimonials, selectTestimonials, selectTestimonialsStatus } from "../../redux/testimonialsSlice";
-import "../../../styles/Testimonials.css"
+import "../../styles/Testimonials.css"
 
 const Testimonials = () => {
   const dispatch = useDispatch();

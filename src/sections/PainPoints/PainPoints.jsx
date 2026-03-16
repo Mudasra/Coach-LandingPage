@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { painPoints } from "./Painpointsdata";
-import "../../../styles/PainPoints.css";
+import "../../styles/PainPoints.css";
 import PainBridge from "./Painbridge";
 import PainCard from "./Paincard";
 import PainHeader from "./Painheader";

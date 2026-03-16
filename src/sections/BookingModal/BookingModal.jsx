@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { closeModal, selectFormError, selectFormStatus, selectIsModalOpen, submitLeadForm } from "../../redux/formSlice";
-import "../../../styles/Modal.css"
+import "../../styles/Modal.css"
 import ModalCorners from "./Modalcorners";
 import ModalCloseButton from "./Modalclosebutton";
 import ModalHeader from "./Modalheader";

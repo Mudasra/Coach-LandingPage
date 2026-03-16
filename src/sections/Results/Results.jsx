@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { transformations } from "./Resultsdata";
-import "../../../styles/Results.css";
+import "../../styles/Results.css";
 import ResultsBackground from "./Resultsbackground";
 import ResultsHeader from "./Resultsheader";
 import ResultCard from "./Resultcard";

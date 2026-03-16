@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/Footer.css"
+import "../../styles/Footer.css"
 import FooterBackground from "./Footerbackground";
 import FooterBrand from "./Footerbrand";
 import FooterNavCol from "./Footernavcol";

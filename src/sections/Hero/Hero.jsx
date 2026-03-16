@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import "../../../styles/Hero.css";
+import "../../styles/Hero.css";
 import HeroWave from "./Herowave";
 import HeroScrollCue from "./Heroscrollcue";
 import HeroSidePanel from "./Herosidepanel";
