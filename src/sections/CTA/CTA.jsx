@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react"
 import { useDispatch } from "react-redux"
 import useCountdown from "./Usecountdown"
-import "../../styles/CTA.css"
+import "../../styles/Cta.css"
 import { openModal } from "../../redux/formSlice"
 import CTABackground from "./Ctabackground"
 import CTAHeader from "./Ctaheader"
