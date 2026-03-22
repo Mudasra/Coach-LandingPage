@@ -12,7 +12,8 @@ const FooterBottom = ({ year }) => (
       <span className="footer-made-diamond" aria-hidden="true">
         ◆
       </span>
-      Developed & Coded by
+      <div>
+      Developed & Coded by {" "}
       <a
         href="/"
         target="_blank"
@@ -20,6 +21,7 @@ const FooterBottom = ({ year }) => (
       >
         Mudasra
       </a>
+      </div>
     </div>
   </div>
 );
