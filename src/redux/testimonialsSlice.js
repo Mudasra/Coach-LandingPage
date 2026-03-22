@@ -48,7 +48,6 @@ const mockTestimonials = [
 export const fetchTestimonials = createAsyncThunk(
   "testimonials/fetch",
   async () => {
-    // Simulated API call
     await new Promise((resolve) => setTimeout(resolve, 800));
     return mockTestimonials;
   }
@@ -58,7 +57,7 @@ const testimonialsSlice = createSlice({
   name: "testimonials",
   initialState: {
     data: [],
-    status: "idle", // 'idle' | 'loading' | 'succeeded' | 'failed'
+    status: "idle", 
     error: null,
   },
   reducers: {},

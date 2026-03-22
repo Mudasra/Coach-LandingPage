@@ -1,4 +1,3 @@
-// components/ModalHeader.jsx
 import React from "react";
 
 const TRUST_ITEMS = ["Custom Action Plan", "No Sales Pitch", "Instant Confirmation"];

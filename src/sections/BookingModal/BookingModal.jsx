@@ -21,7 +21,6 @@ const BookingModal = () => {
   const [touched, setTouched] = useState({});
   const [errors,  setErrors]  = useState({});
 
-  // Redirect on success
   useEffect(() => {
     if (status === "success") {
       const t = setTimeout(() => { dispatch(closeModal()); navigate("/thank-you"); }, 1400);
@@ -29,7 +28,6 @@ const BookingModal = () => {
     }
   }, [status, dispatch, navigate]);
 
-  // Lock body scroll while open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
