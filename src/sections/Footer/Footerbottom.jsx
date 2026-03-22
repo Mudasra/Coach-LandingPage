@@ -1,13 +1,25 @@
 const FooterBottom = ({ year }) => (
   <div className="footer-bottom">
-    <p className="footer-copy">© {year} Jordan Mitchell Coaching. All rights reserved.</p>
+    <p className="footer-copy">
+      © {year} Jordan Mitchell Coaching. All rights reserved.
+    </p>
     <div className="footer-legal" aria-label="Legal links">
       <a href="#privacy">Privacy Policy</a>
       <a href="#terms">Terms of Service</a>
     </div>
+
     <div className="footer-made">
-      <span className="footer-made-diamond" aria-hidden="true">◆</span>
-      Developed & Coded by Mudasra
+      <span className="footer-made-diamond" aria-hidden="true">
+        ◆
+      </span>
+      Developed & Coded by
+      <a
+        href="https://portfolio-eta-ten-v9a2k6k29o.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Mudasra
+      </a>
     </div>
   </div>
 );

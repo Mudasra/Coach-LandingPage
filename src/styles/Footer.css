@@ -157,11 +157,26 @@
   font-size: 0.67rem; color: #4A5060; letter-spacing: 0.08em; text-transform: uppercase;
 }
 
-/* FIX: was #1A1E25 — completely invisible */
+
 .footer-made {
-  display: flex; align-items: center; gap: 0.5rem;
-  font-size: 0.72rem; color: #4A5060; letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  color: #4A5060;
+  letter-spacing: 0.06em;
 }
+
+.footer-made a {
+  color: #C9A84C;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.footer-made a:hover {
+  color: #FBBF24;
+}
+
 .footer-made-diamond { color: #9C7A20; font-size: 0.65rem; }
 
 .footer-legal {
