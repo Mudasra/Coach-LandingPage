@@ -106,10 +106,8 @@
   color: #FBBF24; line-height: 1; letter-spacing: -0.02em; margin-bottom: 0.3rem;
 }
 
-/* FIX: was #353A47 — invisible on #06080C */
 .sti-label { font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; color: #6B7280; }
 
-/* FIX: was #2E3340 — invisible */
 .as-seen-label {
   font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
   color: #6B7280; text-align: center; margin-bottom: 1rem;
@@ -118,7 +116,6 @@
   display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;
 }
 
-/* FIX: was #4A5060 — too dim */
 .as-seen-badge {
   font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06em;
   color: #7A8394; border: 1px solid rgba(255,255,255,0.06);
@@ -157,7 +154,6 @@
 }
 .about-prose.vis { opacity: 1; transform: translateY(0); }
 
-/* FIX: was #4E5567 — too dark on #06080C */
 .about-prose p {
   font-size: 0.95rem; line-height: 1.85; color: #7A8394; margin-bottom: 1.1rem;
 }
@@ -200,7 +196,6 @@
   padding-top: 1px;
 }
 
-/* FIX: was #3E4455 — nearly invisible */
 .cred-text { font-size: 0.8rem; color: #7A8394; line-height: 1.55; }
 
 /* CTA */

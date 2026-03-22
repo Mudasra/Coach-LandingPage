@@ -52,7 +52,6 @@
 }
 .testi-h2 em { font-style: italic; font-weight: 300; color: #C9A84C; }
 
-/* FIX: was #2E3340 — invisible on #080A0F */
 .testi-sub { font-size: 0.92rem; color: #7A8394; line-height: 1.7; max-width: 46ch; margin: 0 auto; }
 
 /* ── Grid ── */
@@ -110,7 +109,6 @@
 .tc-star { color: #D4AF37; font-size: 0.85rem; line-height: 1; }
 .tc-star-empty { color: rgba(212,175,55,0.15); font-size: 0.85rem; line-height: 1; }
 
-/* FIX: was #3A4050 — too dark on dark bg */
 .tc-quote {
   font-size: 0.88rem; line-height: 1.82; color: #7A8394;
   flex: 1; margin-bottom: 1.5rem;
@@ -152,7 +150,6 @@
   color: #C0BAB0; letter-spacing: 0.01em; margin-bottom: 0.15rem;
 }
 
-/* FIX: was #252930 — basically invisible */
 .tc-prev-role { font-size: 0.68rem; color: #606878; letter-spacing: 0.03em; margin-bottom: 0.2rem; }
 
 .tc-curr-role {

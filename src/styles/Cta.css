@@ -103,7 +103,6 @@
 .cta-headline.vis { opacity: 1; transform: translateY(0); }
 .cta-headline em { font-style: italic; font-weight: 300; color: #C9A84C; }
 
-/* FIX: was #3E4455 — invisible on #050609 */
 .cta-body {
   font-size: clamp(0.92rem, 1.2vw, 1.02rem);
   line-height: 1.82; color: #7A8394; max-width: 50ch; margin: 0 auto 3rem;
@@ -112,7 +111,6 @@
 }
 .cta-body.vis { opacity: 1; transform: translateY(0); }
 
-/* FIX: was #5A6070 — too dim */
 .cta-body strong { color: #9AA0B0; font-weight: 400; }
 
 /* ── Countdown ── */
@@ -123,7 +121,6 @@
 }
 .countdown-wrap.vis { opacity: 1; transform: translateY(0); }
 
-/* FIX: was #2A2F3B — invisible */
 .countdown-label {
   font-size: 0.65rem; letter-spacing: 0.24em; text-transform: uppercase;
   color: #6B7280; margin-bottom: 1.25rem;
@@ -161,7 +158,6 @@
   letter-spacing: -0.02em; line-height: 1; z-index: 1;
 }
 
-/* FIX: was #2A2F3B — invisible */
 .time-label {
   font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: #6B7280;
 }
@@ -213,7 +209,6 @@
 .bcg-arrow { font-size: 1rem; transition: transform 0.3s; }
 .btn-cta-gold:hover .bcg-arrow { transform: translateX(5px); }
 
-/* FIX: was #2A2F3B — invisible */
 .trust-row {
   display: flex; flex-wrap: wrap; justify-content: center; gap: 0 2rem;
   opacity: 0; transition: opacity 0.7s ease 0.5s;
@@ -247,7 +242,6 @@
 }
 @keyframes sb-fill-anim { from { width: 0; } to { width: 67%; } }
 
-/* FIX: was #2A2F3B — invisible */
 .sb-label {
   display: flex; justify-content: space-between;
   font-size: 0.65rem; letter-spacing: 0.1em; color: #6B7280;

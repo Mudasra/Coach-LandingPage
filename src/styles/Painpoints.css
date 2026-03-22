@@ -116,7 +116,6 @@
 }
 .pain-card:hover .pain-title { color: #F0EBE0; }
 
-/* Desc — FIX: was #2E3340 (invisible on dark bg), now legible */
 .pain-desc { font-size: 0.88rem; line-height: 1.8; color: #7A8394; margin-bottom: 1.75rem; }
 
 /* Highlights */
