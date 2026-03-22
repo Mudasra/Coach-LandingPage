@@ -14,7 +14,7 @@ const FooterBottom = ({ year }) => (
       </span>
       Developed & Coded by
       <a
-        href="https://portfolio-eta-ten-v9a2k6k29o.vercel.app/"
+        href="/"
         target="_blank"
         rel="noopener noreferrer"
       >
